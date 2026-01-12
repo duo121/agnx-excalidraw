@@ -1028,6 +1028,7 @@ export const AiChatPanel: React.FC<AiChatPanelProps> = ({
               >
                 Mermaid
               </button>
+              {/* DSL 功能暂时隐藏
               <button
                 className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-slate-900/50 dark:text-slate-200"
                 onClick={() => void handleDsl()}
@@ -1044,6 +1045,7 @@ export const AiChatPanel: React.FC<AiChatPanelProps> = ({
               >
                 示例
               </button>
+              */}
             </div>
             <button
               className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white shadow-[0_12px_30px_-20px_rgba(15,23,42,0.6)] transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-white dark:text-slate-900 dark:hover:bg-white/90"

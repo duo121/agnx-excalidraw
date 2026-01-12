@@ -58,10 +58,19 @@ export const ExcalidrawCanvas: React.FC<ExcalidrawCanvasProps> = ({diagramId, on
   }, [diagram, excalidrawAPI, normalizeAppState]);
 
   const initialData = useMemo(() => {
-    if (!diagram) return undefined;
+    if (!diagram) {
+      // 新图表默认使用深色主题
+      return {
+        appState: normalizeAppState({theme: "dark"}),
+      };
+    }
     return {
       elements: diagram.elements,
-      appState: normalizeAppState(diagram.appState),
+      appState: normalizeAppState({
+        ...diagram.appState,
+        // 如果没有保存过主题，默认使用深色
+        theme: diagram.appState?.theme || "dark",
+      }),
       files: diagram.files,
     };
   }, [diagram, normalizeAppState]);

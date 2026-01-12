@@ -4,6 +4,14 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
+## 🔗 相关链接
+
+| 链接 | 说明 |
+|------|------|
+| 🌐 [在线演示](https://agnx-excalidraw.vercel.app/) | 立即体验 AGNX Excalidraw |
+| 📚 [文档站点](https://agnx-excalidraw-docs.vercel.app/) | 详细文档和 API 参考 |
+| 💻 [GitHub 仓库](https://github.com/duo121/agnx-excalidraw) | 源代码和 Issue |
+
 ## ✨ 特性
 
 - 🎨 **Excalidraw 画布** - 完整的 Excalidraw 绘图功能
@@ -217,3 +225,12 @@ pnpm preview
 - [Excalidraw](https://excalidraw.com/) - 优秀的手绘风格白板工具
 - [Mermaid](https://mermaid.js.org/) - 基于文本的图表生成工具
 - [Vercel](https://vercel.com/) - 优秀的部署平台
+
+## 📬 联系我
+
+如果你有任何问题或建议，欢迎通过以下方式联系我：
+
+- 🐛 提交 [GitHub Issue](https://github.com/duo121/agnx-excalidraw/issues)
+- 💬 添加微信交流
+
+<img src="public/wechat.jpg" alt="微信二维码" width="200" />

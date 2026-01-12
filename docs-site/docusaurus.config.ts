@@ -65,6 +65,11 @@ const config: Config = {
         },
         {to: '/blog', label: '博客', position: 'left'},
         {
+          href: 'https://agnx-excalidraw.vercel.app/',
+          label: '🚀 在线演示',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/duo121/agnx-excalidraw',
           label: 'GitHub',
           position: 'right',
@@ -108,12 +113,29 @@ const config: Config = {
           title: '更多',
           items: [
             {
+              label: '🚀 在线演示',
+              href: 'https://agnx-excalidraw.vercel.app/',
+            },
+            {
               label: '博客',
               to: '/blog',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/duo121/agnx-excalidraw',
+            },
+          ],
+        },
+        {
+          title: '联系我',
+          items: [
+            {
+              label: 'GitHub Issues',
+              href: 'https://github.com/duo121/agnx-excalidraw/issues',
+            },
+            {
+              label: '微信交流',
+              to: '/docs/contact',
             },
           ],
         },

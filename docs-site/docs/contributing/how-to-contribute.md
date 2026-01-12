@@ -30,4 +30,4 @@ sidebar_position: 1
 
 ## 问题反馈
 
-在 [GitHub Issues](https://github.com/your-username/agnx-excalidraw/issues) 提交问题。
+在 [GitHub Issues](https://github.com/duo121/agnx-excalidraw/issues) 提交问题。

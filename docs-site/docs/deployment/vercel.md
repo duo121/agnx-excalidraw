@@ -10,13 +10,13 @@ sidebar_position: 1
 
 点击下方按钮快速部署：
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/agnx-excalidraw)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
 ## 手动部署步骤
 
 ### 1. Fork 仓库
 
-将 [agnx-excalidraw](https://github.com/your-username/agnx-excalidraw) fork 到你的 GitHub 账号。
+将 [agnx-excalidraw](https://github.com/duo121/agnx-excalidraw) fork 到你的 GitHub 账号。
 
 ### 2. 导入到 Vercel
 

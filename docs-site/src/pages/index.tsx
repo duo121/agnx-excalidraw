@@ -18,8 +18,18 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            快速开始 →
+            to="/docs">
+            📚 快速开始
+          </Link>
+          <Link
+            className="button button--primary button--lg"
+            href="https://agnx-excalidraw.vercel.app/">
+            🚀 在线演示
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            href="https://github.com/duo121/agnx-excalidraw">
+            ⭐ GitHub
           </Link>
         </div>
       </div>

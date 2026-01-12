@@ -16,7 +16,7 @@ sidebar_position: 1
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/your-username/agnx-excalidraw.git
+git clone https://github.com/duo121/agnx-excalidraw.git
 cd agnx-excalidraw
 ```
 

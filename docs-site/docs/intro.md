@@ -6,6 +6,14 @@ sidebar_position: 1
 
 欢迎使用 **AGNX Excalidraw** - 一个 AI 增强的 Excalidraw 白板应用。
 
+## 🔗 相关链接
+
+| 链接 | 说明 |
+|------|------|
+| 🌐 [在线演示](https://agnx-excalidraw.vercel.app/) | 立即体验 AGNX Excalidraw |
+| 📚 [文档站点](https://agnx-excalidraw-docs.vercel.app/) | 你现在所在的位置 |
+| 💻 [GitHub 仓库](https://github.com/duo121/agnx-excalidraw) | 源代码和 Issue |
+
 ## ✨ 核心特性
 
 - 🎨 **Excalidraw 画布** - 完整的手绘风格白板功能
@@ -20,7 +28,7 @@ sidebar_position: 1
 ### 安装
 
 ```bash
-git clone https://github.com/your-username/agnx-excalidraw.git
+git clone https://github.com/duo121/agnx-excalidraw.git
 cd agnx-excalidraw
 pnpm install
 ```
@@ -61,3 +69,10 @@ AGNX Excalidraw 适合以下场景：
 ## 🤝 贡献
 
 我们欢迎各种形式的贡献！请查看 [贡献指南](/docs/contributing/how-to-contribute)。
+
+## 📬 联系我
+
+如果你有任何问题或建议，欢迎通过以下方式联系我：
+
+- 🐛 提交 [GitHub Issue](https://github.com/duo121/agnx-excalidraw/issues)
+- 💬 [添加微信交流](/docs/contact)

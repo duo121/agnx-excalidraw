@@ -5,7 +5,6 @@ import {nanoid} from "nanoid";
 
 import {ExcalidrawCanvas} from "@web/components/ExcalidrawCanvas";
 import {AiWorkbench} from "@web/components/AiWorkbench";
-import {AppHeader} from "@web/components/AppHeader";
 import type {ExcalidrawElement} from "@excalidraw/excalidraw/element/types";
 
 const DEFAULT_TEXT_STROKE = "#1e1e1e";
@@ -93,7 +92,6 @@ const DiagramPage: React.FC = () => {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <AppHeader />
       <ExcalidrawCanvas diagramId={id} onApiReady={handleApiReady} />
       <AiWorkbench
         diagramId={id}

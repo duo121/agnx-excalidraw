@@ -19,6 +19,9 @@ export const ExcalidrawCanvas: React.FC<ExcalidrawCanvasProps> = ({diagramId, on
   const pendingSaveRef = useRef<SaveDiagramPayload | null>(null);
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSaveAtRef = useRef<number>(0);
+  // 用于在 diagram 加载完成后强制重新挂载 Excalidraw，确保 initialData 被正确应用
+  const [mountKey, setMountKey] = useState(0);
+  const hasInitializedRef = useRef(false);
 
   const normalizeAppState = useCallback((appState?: Partial<AppState>) => {
     const nextState = {...(appState || {})} as AppState;
@@ -41,11 +44,38 @@ export const ExcalidrawCanvas: React.FC<ExcalidrawCanvasProps> = ({diagramId, on
     onApiReady?.(excalidrawAPI);
   }, [excalidrawAPI, onApiReady]);
 
+  // 当 diagram 首次加载完成时，强制重新挂载 Excalidraw 以应用正确的 initialData
+  useEffect(() => {
+    if (!loading && !hasInitializedRef.current) {
+      hasInitializedRef.current = true;
+      // 设置页面主题
+      const theme = diagram?.appState?.theme || "dark";
+      if (typeof document !== "undefined") {
+        document.documentElement.classList.toggle("dark", theme === "dark");
+      }
+      // 如果已经有 diagram，重新挂载 Excalidraw
+      if (diagram) {
+        setMountKey((k) => k + 1);
+      }
+    }
+  }, [loading, diagram]);
+
   useEffect(() => {
     if (!diagram || !excalidrawAPI) return;
     if (lastAppliedVersionRef.current === diagram.version) return;
 
-    const nextAppState = normalizeAppState(diagram.appState || {});
+    // 确保主题被正确应用（如果没有保存主题则默认深色）
+    const savedTheme = diagram.appState?.theme || "dark";
+    const nextAppState = normalizeAppState({
+      ...diagram.appState,
+      theme: savedTheme,
+    });
+    
+    // 同步更新 HTML class
+    if (typeof document !== "undefined") {
+      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    }
+    
     const fileEntries = diagram.files ? Object.values(diagram.files) : [];
     if (fileEntries.length > 0) {
       excalidrawAPI.addFiles(fileEntries);
@@ -135,6 +165,7 @@ export const ExcalidrawCanvas: React.FC<ExcalidrawCanvasProps> = ({diagramId, on
         </div>
       )}
       <Excalidraw
+        key={mountKey}
         excalidrawAPI={(api) => setExcalidrawAPI(api)}
         initialData={initialData}
         onChange={handleChange}

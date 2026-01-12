@@ -8,6 +8,8 @@ sidebar_position: 2
 
 ## 基本界面
 
+![AGNX Excalidraw 界面](/img/UI.png)
+
 启动应用后，你会看到以下界面：
 
 - **左侧工具栏** - Excalidraw 原生绘图工具

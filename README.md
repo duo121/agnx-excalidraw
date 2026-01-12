@@ -6,6 +6,10 @@ An AI-enhanced whiteboard application based on [Excalidraw](https://excalidraw.c
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
+## 📸 Preview
+
+![AGNX Excalidraw UI](./public/UI.png)
+
 ## 🔗 Links
 
 | Link | Description |

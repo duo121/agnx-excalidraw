@@ -6,6 +6,10 @@ sidebar_position: 1
 
 欢迎使用 **AGNX Excalidraw** - 一个 AI 增强的 Excalidraw 白板应用。
 
+## 📸 界面预览
+
+![AGNX Excalidraw UI](/img/UI.png)
+
 ## 🔗 相关链接
 
 | 链接 | 说明 |

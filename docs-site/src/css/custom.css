@@ -1,5 +1,9 @@
+
+
+/* 你的原有 CSS 样式可以保留在下方 */
 /**
  * AGNX Excalidraw 文档站点自定义样式
+ * 注意：Docusaurus 不需要 Tailwind CSS
  */
 
 :root {

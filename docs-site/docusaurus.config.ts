@@ -17,7 +17,6 @@ const config: Config = {
   projectName: 'agnx-excalidraw', // 仓库名
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'zh-Hans',
@@ -84,11 +83,11 @@ const config: Config = {
             },
             {
               label: '架构说明',
-              to: '/docs/architecture',
+              to: '/docs/concepts/architecture',
             },
             {
               label: 'API 文档',
-              to: '/docs/api',
+              to: '/docs/api/overview',
             },
           ],
         },

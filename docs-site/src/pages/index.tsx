@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs">
+            to="/docs/intro">
             📚 快速开始
           </Link>
           <Link
@@ -30,6 +30,11 @@ function HomepageHeader() {
             className="button button--outline button--lg"
             href="https://github.com/duo121/agnx-excalidraw">
             ⭐ GitHub
+          </Link>
+          <Link
+            className="button button--info button--lg"
+            to="/docs/contact">
+            💬 联系我
           </Link>
         </div>
       </div>

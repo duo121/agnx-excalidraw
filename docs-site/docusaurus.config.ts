@@ -7,10 +7,10 @@ const config: Config = {
   tagline: 'AI-powered Excalidraw whiteboard with Mermaid support',
   favicon: 'img/favicon.ico',
 
-  // 设置你的 GitHub Pages URL
-  url: 'https://duo121.github.io',
-  // 设置 /<baseUrl>/ pathname
-  baseUrl: '/agnx-excalidraw/',
+  // Vercel 部署 URL（部署后替换为实际域名）
+  url: 'https://agnx-excalidraw-docs.vercel.app',
+  // Vercel 部署使用根路径
+  baseUrl: '/',
 
   // GitHub Pages 部署配置
   organizationName: 'duo121', // GitHub 用户名

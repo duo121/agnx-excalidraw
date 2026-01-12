@@ -1,236 +1,181 @@
 # AGNX Excalidraw
 
-一个基于 [Excalidraw](https://excalidraw.com/) 的 AI 增强白板应用，支持 Mermaid 图表转换、DSL 编辑和多种 AI 模型集成。
+[English](./README.md) | [中文](./README.zh-CN.md)
+
+An AI-enhanced whiteboard application based on [Excalidraw](https://excalidraw.com/), supporting Mermaid diagram conversion, DSL editing, and multiple AI model integrations.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
-## 🔗 相关链接
+## 🔗 Links
 
-| 链接 | 说明 |
-|------|------|
-| 🌐 [在线演示](https://agnx-excalidraw.vercel.app/) | 立即体验 AGNX Excalidraw |
-| 📚 [文档站点](https://agnx-excalidraw-docs.vercel.app/) | 详细文档和 API 参考 |
-| 💻 [GitHub 仓库](https://github.com/duo121/agnx-excalidraw) | 源代码和 Issue |
+| Link | Description |
+|------|-------------|
+| 🌐 [Live Demo](https://agnx-excalidraw.vercel.app/) | Try AGNX Excalidraw now |
+| 📚 [Documentation](https://agnx-excalidraw-docs.vercel.app/) | Detailed docs and API reference |
+| 💻 [GitHub Repository](https://github.com/duo121/agnx-excalidraw) | Source code and issues |
 
-## ✨ 特性
+## ✨ Features
 
-- 🎨 **Excalidraw 画布** - 完整的 Excalidraw 绘图功能
-- 🤖 **AI 对话** - 支持多种 AI 模型（OpenAI、Anthropic、Gemini 等）
-- 📊 **Mermaid 支持** - 自动将 Mermaid 代码转换为 Excalidraw 图形
-- 📝 **DSL 编辑** - 通过 DSL 语法高效编辑画布元素
-- 💾 **本地存储** - 自动保存图表到浏览器本地存储
-- 🌙 **深色模式** - 支持亮色/深色主题切换
-- 🚀 **一键部署** - 支持 Vercel 一键部署
+- 🎨 **Excalidraw Canvas** - Full Excalidraw drawing capabilities
+- 🤖 **AI Chat** - Support for multiple AI models (OpenAI, Anthropic, Gemini, etc.)
+- 📊 **Mermaid Support** - Automatically convert Mermaid code to Excalidraw graphics
+- 📝 **DSL Editing** - Efficiently edit canvas elements via DSL syntax
+- 💾 **Local Storage** - Auto-save diagrams to browser local storage
+- 🌙 **Dark Mode** - Light/dark theme switching
+- 🚀 **One-Click Deploy** - Deploy to Vercel with one click
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 环境要求
+### Requirements
 
 - Node.js >= 18.0.0
-- pnpm（推荐）或 npm
+- pnpm (recommended) or npm
 
-### 安装
+### Installation
 
 ```bash
-# 克隆项目
+# Clone the repository
 git clone https://github.com/duo121/agnx-excalidraw.git
 cd agnx-excalidraw
 
-# 安装依赖
+# Install dependencies
 pnpm install
 
-# 启动开发服务器
+# Start development server
 pnpm dev
 ```
 
-### 环境变量配置
+### Environment Variables
 
-在项目根目录创建 `.env` 或 `.env.local` 文件：
+Create a `.env` or `.env.local` file in the project root:
 
 ```env
-# AI 模型配置（至少配置一个）
+# AI model configuration (at least one required)
 OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 GEMINI_API_KEY=your_gemini_api_key
 DEEPSEEK_API_KEY=your_deepseek_api_key
 
-# 可选：自定义模型配置
+# Optional: Custom model configuration
 VITE_PROVIDER_TYPE=openai
 VITE_BASE_URL=https://api.openai.com/v1
 VITE_MODEL=gpt-4o-mini
 ```
 
-### 构建与部署
+### Build & Deploy
 
 ```bash
-# 构建生产版本
+# Build for production
 pnpm build
 
-# 预览构建结果
+# Preview build
 pnpm preview
 ```
 
-## 📚 使用指南
+## 📚 Usage Guide
 
-### AI 对话
+### AI Chat
 
-1. 点击右侧工具栏的 AI 图标打开 AI 面板
-2. 在输入框输入你的需求，例如："画一个用户登录流程图"
-3. AI 会自动生成 Mermaid 代码并转换为 Excalidraw 图形
+1. Click the AI icon in the right toolbar to open the AI panel
+2. Enter your request, e.g., "Draw a user login flowchart"
+3. AI will generate Mermaid code and convert it to Excalidraw graphics
 
-### Mermaid 模式
+### Mermaid Mode
 
-1. 在 AI 面板中选择 "Mermaid" 模式
-2. 直接输入或让 AI 生成 Mermaid 代码
-3. 点击 "转换" 将代码转换为图形
+1. Select "Mermaid" mode in the AI panel
+2. Enter or let AI generate Mermaid code
+3. Click "Convert" to transform code into graphics
 
-支持的 Mermaid 图表类型：
-- 流程图 (flowchart)
-- 时序图 (sequenceDiagram)
-- 类图 (classDiagram)
-- 状态图 (stateDiagram)
-- 实体关系图 (erDiagram)
-- 甘特图 (gantt)
+Supported Mermaid diagram types:
+- Flowchart
+- Sequence Diagram
+- Class Diagram
+- State Diagram
+- ER Diagram
+- Gantt Chart
 
-### DSL 编辑模式
+### DSL Edit Mode
 
-1. 在 AI 面板中选择 "DSL" 模式
-2. 输入编辑指令，例如："将所有矩形的颜色改为蓝色"
-3. AI 会解析指令并更新画布元素
+1. Select "DSL" mode in the AI panel
+2. Enter edit instructions, e.g., "Change all rectangles to blue"
+3. AI will parse instructions and update canvas elements
 
-## 🏗️ 项目结构
+## 🔧 Configuration
 
-```
-agnx-excalidraw/
-├── src/
-│   ├── web/                    # Web 应用入口
-│   │   ├── App.tsx            # 主应用组件
-│   │   ├── main.tsx           # 入口文件
-│   │   ├── components/        # UI 组件
-│   │   │   ├── ExcalidrawCanvas.tsx
-│   │   │   ├── AiChatPanel.tsx
-│   │   │   ├── MermaidPanel.tsx
-│   │   │   └── ...
-│   │   ├── hooks/             # React Hooks
-│   │   └── lib/               # 工具函数
-│   │
-│   ├── sdk/                    # 核心 SDK
-│   │   ├── ai/                # AI 相关功能
-│   │   │   ├── client.ts      # AI 客户端
-│   │   │   ├── config.ts      # 配置管理
-│   │   │   ├── prompts.ts     # Prompt 模板
-│   │   │   └── text_generation.ts
-│   │   ├── dsl/               # DSL 解析器
-│   │   └── utils/             # 工具函数
-│   │
-│   └── storage.ts             # 本地存储
-│
-├── public/                     # 静态资源
-├── docs/                       # 文档
-├── vite.config.ts             # Vite 配置
-├── tsconfig.json              # TypeScript 配置
-└── package.json
-```
+### Supported AI Providers
 
-## 🔧 配置说明
-
-### 支持的 AI 模型提供商
-
-| 提供商 | 环境变量 | 默认模型 |
-|--------|----------|----------|
+| Provider | Environment Variable | Default Model |
+|----------|---------------------|---------------|
 | OpenAI | `OPENAI_API_KEY` | gpt-4o-mini |
 | Anthropic | `ANTHROPIC_API_KEY` | claude-3-sonnet |
 | Google Gemini | `GEMINI_API_KEY` | gemini-pro |
 | DeepSeek | `DEEPSEEK_API_KEY` | deepseek-chat |
 
-### Vite 环境变量
+### Vite Environment Variables
 
-- `VITE_` 前缀的环境变量会暴露给客户端
-- 生产环境构建时，`*_API_KEY` 不会被注入（安全考虑）
+- Environment variables with `VITE_` prefix are exposed to the client
+- `*_API_KEY` variables are NOT injected in production builds (for security)
 
-## 🚀 部署到 Vercel
+## 🚀 Deploy to Vercel
 
-### 一键部署
+### One-Click Deploy
 
-点击下方按钮快速部署到 Vercel：
+Click the button below to deploy to Vercel:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
-### 手动部署
+### Manual Deploy
 
-1. Fork 此仓库到你的 GitHub 账号
-2. 在 [Vercel](https://vercel.com) 中导入项目
-3. 配置环境变量（在 Vercel 控制台中设置）
-4. 部署完成！
+1. Fork this repository to your GitHub account
+2. Import the project in [Vercel](https://vercel.com)
+3. Configure environment variables in Vercel dashboard
+4. Deploy!
 
-### Vercel 配置
+## 🛠️ Development
 
-项目已包含 `vercel.json` 配置文件：
-
-```json
-{
-  "framework": "vite",
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist"
-}
-```
-
-## 🛠️ 开发
-
-### 开发命令
+### Commands
 
 ```bash
-# 启动开发服务器
-pnpm dev
-
-# 类型检查
-pnpm typecheck
-
-# 构建
-pnpm build
-
-# 预览构建结果
-pnpm preview
+pnpm dev        # Start dev server
+pnpm typecheck  # Type checking
+pnpm build      # Build for production
+pnpm preview    # Preview build
 ```
 
-### 技术栈
+### Tech Stack
 
-- **框架**: React 19 + TypeScript
-- **构建**: Vite 7
-- **样式**: Tailwind CSS
-- **画布**: Excalidraw
-- **图表**: Mermaid
-- **路由**: React Router DOM
+- **Framework**: React 19 + TypeScript
+- **Build Tool**: Vite 7
+- **Styling**: Tailwind CSS
+- **Canvas**: Excalidraw
+- **Diagrams**: Mermaid
+- **Routing**: React Router DOM
 
-## 📖 API 文档
+## 🤝 Contributing
 
-详细的 API 文档请参阅 [docs/api.md](./docs/api.md)。
+Contributions are welcome! Please see [CONTRIBUTING.md](./docs/CONTRIBUTING.md) for details.
 
-## 🤝 贡献指南
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-欢迎贡献！请参阅 [CONTRIBUTING.md](./docs/CONTRIBUTING.md) 了解详情。
+## 📄 License
 
-1. Fork 项目
-2. 创建功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建 Pull Request
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## 📄 许可证
+## 🙏 Acknowledgments
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](./LICENSE) 文件。
+- [Excalidraw](https://excalidraw.com/) - Excellent hand-drawn style whiteboard tool
+- [Mermaid](https://mermaid.js.org/) - Text-based diagram generation tool
+- [Vercel](https://vercel.com/) - Excellent deployment platform
 
-## 🙏 致谢
+## 📬 Contact
 
-- [Excalidraw](https://excalidraw.com/) - 优秀的手绘风格白板工具
-- [Mermaid](https://mermaid.js.org/) - 基于文本的图表生成工具
-- [Vercel](https://vercel.com/) - 优秀的部署平台
+If you have any questions or suggestions, feel free to reach out:
 
-## 📬 联系我
+- 🐛 Submit a [GitHub Issue](https://github.com/duo121/agnx-excalidraw/issues)
+- 💬 Add me on WeChat
 
-如果你有任何问题或建议，欢迎通过以下方式联系我：
-
-- 🐛 提交 [GitHub Issue](https://github.com/duo121/agnx-excalidraw/issues)
-- 💬 添加微信交流
-
-<img src="public/wechat.jpg" alt="微信二维码" width="200" />
+<img src="public/wechat.jpg" alt="WeChat QR Code" width="200" />

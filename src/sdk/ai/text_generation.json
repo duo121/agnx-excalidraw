@@ -1,0 +1,155 @@
+{
+  "providers": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "protocol": "openai",
+      "baseUrl": "https://api.openai.com/v1",
+      "models": [
+        "gpt-4o",
+        "gpt-4o-mini",
+        "gpt-4-turbo",
+        "gpt-3.5-turbo"
+      ],
+      "docs": "https://platform.openai.com/api-keys"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "protocol": "anthropic",
+      "baseUrl": "https://api.anthropic.com",
+      "models": [
+        "claude-4-5-sonnet",
+        "claude-4-5-haiku",
+        "claude-4-5-opus"
+      ],
+      "docs": "https://console.anthropic.com/settings/keys"
+    },
+    {
+      "id": "qwen",
+      "name": "通义千问",
+      "protocol": "openai",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "models": [
+        "qwen-max",
+        "qwen-plus",
+        "qwen-turbo",
+        "qwen-long",
+        "qwen-coder-plus",
+        "qwen-coder-turbo"
+      ],
+      "docs": "https://dashscope.console.aliyun.com/apiKey"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "protocol": "gemini",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "models": [
+        "gemini-2.5-pro",
+        "gemini-2.5-flash",
+        "gemini-2.0-flash",
+        "gemini-1.5-pro",
+        "gemini-1.5-flash"
+      ],
+      "docs": "https://aistudio.google.com/app/apikey"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "protocol": "openai",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "models": [
+        "deepseek-chat",
+        "deepseek-reasoner"
+      ],
+      "docs": "https://platform.deepseek.com/api_keys"
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot 月之暗面",
+      "protocol": "openai",
+      "baseUrl": "https://api.moonshot.cn/v1",
+      "models": [
+        "moonshot-v1-32k",
+        "moonshot-v1-8k",
+        "moonshot-v1-128k"
+      ],
+      "docs": "https://platform.moonshot.cn/console/api-keys"
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 GLM",
+      "protocol": "openai",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "models": [
+        "glm-4-plus",
+        "glm-4-air-250414",
+        "glm-4-flash-250414",
+        "glm-4-long",
+        "glm-z1-air",
+        "glm-z1-flash"
+      ],
+      "docs": "https://open.bigmodel.cn/usercenter/apikeys"
+    },
+    {
+      "id": "doubao",
+      "name": "豆包",
+      "protocol": "openai",
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "models": [
+        "doubao-seed-1-6-251015",
+        "doubao-1-5-pro-32k-250115",
+        "doubao-1-5-lite-32k-250115",
+        "doubao-pro-32k"
+      ],
+      "docs": "https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey"
+    },
+    {
+      "id": "volcengine",
+      "name": "火山引擎",
+      "protocol": "openai",
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "models": [
+        "doubao-pro-32k",
+        "doubao-lite-32k",
+        "doubao-lite-128k"
+      ],
+      "docs": "https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey"
+    },
+    {
+      "id": "modelscope",
+      "name": "魔搭 ModelScope",
+      "protocol": "openai",
+      "baseUrl": "https://api-inference.modelscope.cn/v1",
+      "models": [
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+      ],
+      "docs": "https://modelscope.cn/my/myaccesstoken"
+    },
+    {
+      "id": "iflow",
+      "name": "iFlow",
+      "protocol": "openai",
+      "baseUrl": "https://apis.iflow.cn/v1",
+      "models": [
+        "glm-4.6",
+        "kimi-k2-0905"
+      ],
+      "docs": "https://iflow.cn/api-keys"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVDIA",
+      "protocol": "openai",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "models": [
+        "z-ai/glm4.6",
+        "z-ai/glm4.7",
+        "minimaxai/minimax-m2",
+        "minimaxai/minimax-m2.1"
+      ],
+      "docs": "https://build.nvidia.com/settings/api-keys"
+    }
+  ]
+}

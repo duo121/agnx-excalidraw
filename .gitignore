@@ -38,3 +38,7 @@ coverage/
 
 # Vercel
 .vercel
+
+# 公众号相关文件
+AGNX_Excalidraw公众号文章.md
+AGNX_Excalidraw公众号文章.html

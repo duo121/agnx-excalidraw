@@ -1036,6 +1036,14 @@ export const AiChatPanel: React.FC<AiChatPanelProps> = ({
               >
                 Mermaid
               </button>
+              <button
+                className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-slate-900/50 dark:text-slate-200"
+                onClick={handleDslExample}
+                disabled={isWorking}
+                type="button"
+              >
+                示例
+              </button>
               {/* DSL 功能暂时隐藏
               <button
                 className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-slate-900/50 dark:text-slate-200"
@@ -1044,14 +1052,6 @@ export const AiChatPanel: React.FC<AiChatPanelProps> = ({
                 type="button"
               >
                 DSL
-              </button>
-              <button
-                className="rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-slate-900/50 dark:text-slate-200"
-                onClick={handleDslExample}
-                disabled={isWorking}
-                type="button"
-              >
-                示例
               </button>
               */}
             </div>

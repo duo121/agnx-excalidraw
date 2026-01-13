@@ -2,13 +2,17 @@
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
-An AI-enhanced whiteboard application based on [Excalidraw](https://excalidraw.com/), supporting Mermaid diagram conversion, DSL editing, and multiple AI model integrations.
+An AI-enhanced whiteboard application based on [Excalidraw](https://excalidraw.com/), supporting Mermaid diagram conversion and multiple AI model integrations.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
 
 ## 📸 Preview
 
-![AGNX Excalidraw UI](./public/UI.png)
+![AGNX Excalidraw Preview](./public/preview.png)
+
+## ✨ Effect
+
+![AGNX Excalidraw Effect](./public/effect.png)
 
 ## 🔗 Links
 
@@ -18,12 +22,22 @@ An AI-enhanced whiteboard application based on [Excalidraw](https://excalidraw.c
 | 📚 [Documentation](https://agnx-excalidraw-docs.vercel.app/) | Detailed docs and API reference |
 | 💻 [GitHub Repository](https://github.com/duo121/agnx-excalidraw) | Source code and issues |
 
+## 🎁 Free AI Models
+
+**No API key? No problem!** We provide free AI models via iFlow platform:
+
+- **GLM-4-Air** - Zhipu AI's model with excellent Chinese understanding
+- **Kimi K2** - Moonshot AI's latest model with strong reasoning capabilities
+
+🔗 Get your free API key: https://platform.iflow.cn/profile?tab=apiKey
+
+![iFlow Free Models](./public/ifow.png)
+
 ## ✨ Features
 
 - 🎨 **Excalidraw Canvas** - Full Excalidraw drawing capabilities
-- 🤖 **AI Chat** - Support for multiple AI models (OpenAI, Anthropic, Gemini, etc.)
+- 🤖 **AI Chat** - Support for multiple AI models (OpenAI, Anthropic, Gemini, iFlow free models, etc.)
 - 📊 **Mermaid Support** - Automatically convert Mermaid code to Excalidraw graphics
-- 📝 **DSL Editing** - Efficiently edit canvas elements via DSL syntax
 - 💾 **Local Storage** - Auto-save diagrams to browser local storage
 - 🌙 **Dark Mode** - Light/dark theme switching
 - 🚀 **One-Click Deploy** - Deploy to Vercel with one click
@@ -98,12 +112,6 @@ Supported Mermaid diagram types:
 - ER Diagram
 - Gantt Chart
 
-### DSL Edit Mode
-
-1. Select "DSL" mode in the AI panel
-2. Enter edit instructions, e.g., "Change all rectangles to blue"
-3. AI will parse instructions and update canvas elements
-
 ## 🔧 Configuration
 
 ### Supported AI Providers
@@ -114,6 +122,9 @@ Supported Mermaid diagram types:
 | Anthropic | `ANTHROPIC_API_KEY` | claude-3-sonnet |
 | Google Gemini | `GEMINI_API_KEY` | gemini-pro |
 | DeepSeek | `DEEPSEEK_API_KEY` | deepseek-chat |
+| iFlow (Free) | Configure in Settings | glm-4-air, kimi-k2 |
+
+🆓 **Free option**: Get free API key from https://platform.iflow.cn/profile?tab=apiKey
 
 ### Vite Environment Variables
 

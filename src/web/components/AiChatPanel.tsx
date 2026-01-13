@@ -931,9 +931,17 @@ export const AiChatPanel: React.FC<AiChatPanelProps> = ({
               欢迎使用 AI 绘图助手
             </h3>
             <p className="mb-6 max-w-[240px] text-xs text-slate-500 dark:text-slate-400">
-              描述你想要的图表，AI 将帮你生成 Mermaid 或 DSL 代码
+              描述你想要的图表，AI 将帮你生成 Mermaid 代码并转换为图形
             </p>
             <div className="flex flex-col gap-2">
+              <a
+                href="https://platform.iflow.cn/profile?tab=apiKey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-emerald-300/70 bg-emerald-50/80 px-4 py-2 text-xs font-medium text-emerald-700 shadow-sm transition hover:border-emerald-400 hover:bg-emerald-100 dark:border-emerald-500/30 dark:bg-emerald-900/30 dark:text-emerald-300 dark:hover:border-emerald-400/50 dark:hover:bg-emerald-800/40"
+              >
+                🎁 获取免费 API Key（GLM-4、Kimi K2）
+              </a>
               <a
                 href="https://agnx-excalidraw-docs.vercel.app/docs/intro"
                 target="_blank"

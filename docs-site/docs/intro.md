@@ -8,7 +8,11 @@ sidebar_position: 1
 
 ## 📸 界面预览
 
-![AGNX Excalidraw UI](/img/UI.png)
+![AGNX Excalidraw 界面预览](/img/preview.png)
+
+## ✨ 效果展示
+
+![AGNX Excalidraw 效果展示](/img/effect.png)
 
 ## 🔗 相关链接
 
@@ -17,13 +21,22 @@ sidebar_position: 1
 | 🌐 [在线演示](https://agnx-excalidraw.vercel.app/) | 立即体验 AGNX Excalidraw |
 | 📚 [文档站点](https://agnx-excalidraw-docs.vercel.app/) | 你现在所在的位置 |
 | 💻 [GitHub 仓库](https://github.com/duo121/agnx-excalidraw) | 源代码和 Issue |
+| 🎁 [免费 API Key](https://platform.iflow.cn/profile?tab=apiKey) | 获取 GLM-4-Air、Kimi K2 免费额度 |
+
+## 🎁 免费 AI 模型
+
+**没有 API 密钥也能用！** 项目集成了心流平台的免费模型：
+
+- **GLM-4-Air** - 智谱 AI 出品，中文理解能力强
+- **Kimi K2** - 月之暗面最新模型，推理能力出色
+
+👉 [点击获取免费 API Key](https://platform.iflow.cn/profile?tab=apiKey)
 
 ## ✨ 核心特性
 
 - 🎨 **Excalidraw 画布** - 完整的手绘风格白板功能
-- 🤖 **AI 对话** - 支持多种 AI 模型（OpenAI、Anthropic、Gemini 等）
+- 🤖 **AI 对话** - 支持多种 AI 模型（OpenAI、Anthropic、Gemini、心流免费模型等）
 - 📊 **Mermaid 支持** - 自动将 Mermaid 代码转换为 Excalidraw 图形
-- 📝 **DSL 编辑** - 通过 DSL 语法高效编辑画布元素
 - 💾 **本地存储** - 自动保存图表到浏览器本地存储
 - 🚀 **一键部署** - 支持 Vercel 一键部署
 

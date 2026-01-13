@@ -145,6 +145,25 @@ export const AiSettingsPanel: React.FC<AiSettingsPanelProps> = ({onClose}) => {
 
   return (
     <div className="flex h-full flex-col gap-5 overflow-y-auto p-4 text-sm text-slate-700 dark:text-slate-200">
+      {/* 免费模型提示 */}
+      <a
+        href="https://platform.iflow.cn/profile?tab=apiKey"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 rounded-2xl border border-emerald-300/50 bg-gradient-to-r from-emerald-50/80 to-teal-50/80 p-3 text-xs transition hover:border-emerald-400/70 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-900/30 dark:to-teal-900/30 dark:hover:border-emerald-400/50"
+      >
+        <span className="text-xl">🎁</span>
+        <div className="flex-1">
+          <div className="font-medium text-emerald-800 dark:text-emerald-200">
+            免费 API Key 可用
+          </div>
+          <div className="text-emerald-600/80 dark:text-emerald-400/80">
+            支持 GLM-4-Air、Kimi K2 等模型，点击获取
+          </div>
+        </div>
+        <span className="text-emerald-500">→</span>
+      </a>
+
       <div className="flex flex-col gap-3">
         {providers.length === 0 && (
           <div className="rounded-2xl border border-dashed border-slate-200/70 bg-white/70 p-4 text-xs text-slate-500 dark:border-white/10 dark:bg-slate-900/40 dark:text-slate-400">

@@ -2,9 +2,17 @@
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
-一个基于 [Excalidraw](https://excalidraw.com/) 的 AI 增强白板应用，支持 Mermaid 图表转换、DSL 编辑和多种 AI 模型集成。
+一个基于 [Excalidraw](https://excalidraw.com/) 的 AI 增强白板应用，支持 Mermaid 图表转换和多种 AI 模型集成。
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/duo121/agnx-excalidraw)
+
+## 📸 界面预览
+
+![AGNX Excalidraw 界面预览](./public/preview.png)
+
+## ✨ 效果展示
+
+![AGNX Excalidraw 效果展示](./public/effect.png)
 
 ## 🔗 相关链接
 
@@ -14,12 +22,22 @@
 | 📚 [文档站点](https://agnx-excalidraw-docs.vercel.app/) | 详细文档和 API 参考 |
 | 💻 [GitHub 仓库](https://github.com/duo121/agnx-excalidraw) | 源代码和 Issue |
 
+## 🎁 免费 AI 模型
+
+**没有 API 密钥也能用！** 项目集成了心流平台的免费模型：
+
+- **GLM-4-Air** - 智谱 AI 出品，中文理解能力强
+- **Kimi K2** - 月之暗面最新模型，推理能力出色
+
+🔗 获取免费 API Key：https://platform.iflow.cn/profile?tab=apiKey
+
+![iFlow 免费模型](./public/ifow.png)
+
 ## ✨ 特性
 
 - 🎨 **Excalidraw 画布** - 完整的 Excalidraw 绘图功能
-- 🤖 **AI 对话** - 支持多种 AI 模型（OpenAI、Anthropic、Gemini 等）
+- 🤖 **AI 对话** - 支持多种 AI 模型（OpenAI、Anthropic、Gemini、心流免费模型等）
 - 📊 **Mermaid 支持** - 自动将 Mermaid 代码转换为 Excalidraw 图形
-- 📝 **DSL 编辑** - 通过 DSL 语法高效编辑画布元素
 - 💾 **本地存储** - 自动保存图表到浏览器本地存储
 - 🌙 **深色模式** - 支持亮色/深色主题切换
 - 🚀 **一键部署** - 支持 Vercel 一键部署
@@ -94,12 +112,6 @@ pnpm preview
 - 实体关系图 (erDiagram)
 - 甘特图 (gantt)
 
-### DSL 编辑模式
-
-1. 在 AI 面板中选择 "DSL" 模式
-2. 输入编辑指令，例如："将所有矩形的颜色改为蓝色"
-3. AI 会解析指令并更新画布元素
-
 ## 🔧 配置说明
 
 ### 支持的 AI 模型提供商
@@ -110,6 +122,9 @@ pnpm preview
 | Anthropic | `ANTHROPIC_API_KEY` | claude-3-sonnet |
 | Google Gemini | `GEMINI_API_KEY` | gemini-pro |
 | DeepSeek | `DEEPSEEK_API_KEY` | deepseek-chat |
+| 心流（免费） | 在设置中配置 | glm-4-air, kimi-k2 |
+
+🆓 **免费选项**：从 https://platform.iflow.cn/profile?tab=apiKey 获取免费 API Key
 
 ### Vite 环境变量
 

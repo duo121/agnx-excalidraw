@@ -4,6 +4,12 @@ sidebar_position: 4
 
 # DSL 编辑
 
+:::caution 实验性功能
+
+此功能目前为实验性功能，在用户界面中已暂时隐藏。如果你是开发者并希望尝试此功能，可以通过 SDK API 调用。
+
+:::
+
 DSL（Domain Specific Language）是 Excalidraw JSON 的压缩文本格式，可以通过自然语言指令高效编辑画布。
 
 ## 什么是 DSL？

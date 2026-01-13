@@ -27,6 +27,11 @@ function HomepageHeader() {
             🚀 在线演示
           </Link>
           <Link
+            className="button button--success button--lg"
+            href="https://platform.iflow.cn/profile?tab=apiKey">
+            🎁 免费 API Key
+          </Link>
+          <Link
             className="button button--outline button--lg"
             href="https://github.com/duo121/agnx-excalidraw">
             ⭐ GitHub
@@ -55,14 +60,14 @@ const FeatureList: FeatureItem[] = [
     description: '支持多种 AI 模型，通过自然语言描述生成图表，让绘图更智能。',
   },
   {
+    title: '免费模型',
+    emoji: '🎁',
+    description: '集成心流平台免费模型（GLM-4-Air、Kimi K2），无需付费即可体验。',
+  },
+  {
     title: 'Mermaid 支持',
     emoji: '📊',
     description: '自动将 Mermaid 代码转换为手绘风格的 Excalidraw 图形。',
-  },
-  {
-    title: 'DSL 编辑',
-    emoji: '📝',
-    description: '通过 DSL 语法高效编辑画布元素，支持批量操作。',
   },
   {
     title: '一键部署',
